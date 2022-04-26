@@ -6,6 +6,7 @@ import io.micronaut.context.annotation.Replaces;
 
 @Context
 @Replaces(value = SomeInterface.class, qualifier = Two.class)
+@Two
 public class SomeInterfaceImplTwoReplacement implements SomeInterface
 {
     @Override
